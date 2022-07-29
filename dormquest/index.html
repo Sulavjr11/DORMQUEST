@@ -1,3 +1,13 @@
+<?php 
+session_start();
+
+if(!isset($_SESSION['user_id'])){
+
+    header("Location: index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,7 +222,13 @@
                 <img src="image/product-5.png" alt="">
                 <h3>Chabahil Hostel</h3>
                 <div class="price"> Rs7500 - Rs9200 </div>
-                
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
                 <a href="#" class="btn">Bookmark this</a>
             </div>
 
